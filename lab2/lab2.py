@@ -86,7 +86,7 @@ print(f"\nf_min: {min_value}")
 print(f"x_min: {min_point}")
 print(f"y_min: {min_y}")
 
-# comparison with the scipy result  
+# сравнение с scipy  
 def scipy_minimize():
     constraints = {'type': 'eq', 'fun': lambda x: np.linalg.norm(x - x0) - r}
     res = minimize(f, x0, method='SLSQP', constraints=constraints)

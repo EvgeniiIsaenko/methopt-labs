@@ -3,10 +3,9 @@ import matplotlib.pyplot as plt
 
 def generate_positive_definite_matrix(size=6):
     A = np.random.rand(size, size)
-    
+
     # симметричная, положительна определенная (A * A^T)
     A = np.dot(A, A.T)
-    
     return A
 
 def gradient(x, A, b):
